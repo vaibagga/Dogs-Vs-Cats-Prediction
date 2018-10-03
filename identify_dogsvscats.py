@@ -1,3 +1,4 @@
+## import all the dependencies
 import cv2
 import numpy as np
 import os
@@ -45,7 +46,7 @@ from tflearn.layers.conv import conv_2d,max_pool_2d
 from tflearn.layers.core import input_data,dropout,fully_connected
 from tflearn.layers.estimator import regression
 
-
+## model architecture
 convnet=input_data(shape=[None,IMG_SIZE,IMG_SIZE,1],name='input')
 
 convnet=conv_2d(convnet,32,2,activation='relu')
